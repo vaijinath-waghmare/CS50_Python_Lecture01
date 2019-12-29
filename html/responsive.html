@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>My Web Page!</title>
+		<style>
+			@media (min-width:1000px){
+				body {
+						background-color:red;
+					}
+				h1::before {
+					content: "Welcome to my page"
+				}	
+			}
+			@media (max-width:999px){
+					body {
+						background-color:yellow;
+						}
+					h1::before {
+					content: "Welcome!"
+				}	
+			}
+			@media print{
+					.screen-only {
+						display: none;
+						}
+			}
+		</style>
+	</head>
+	<body>
+		<br>
+		Hello World!
+		
+		<h1 class="screen-only"> <br>Do  not print this line </h1>
+		
+	</body>
+</html>
