@@ -1,3 +1,4 @@
+<!--
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -5,6 +6,7 @@
     <title>My Flask Website</title>
   </head>
   <body>
+  -->
     <!--<h1>Hello World!!!!!!</h1>-->
     <!-- Jinja 2 way to provide input to html-->
     <!--<h1>{{ headline }}</h1> -->
@@ -21,12 +23,32 @@
       {% endfor %}
     </ul>
   -->
+<!--
     <h1>First page</h1>
     <p> aaaaaaaaaaaaaaa
         aaaaaaaaaaaaaaaaa
         aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
         aaaaaaaaaaaaaaaaaaaaaaaaaaaa
     </p>
-    <a href="{{ url_for('more') }}">See More.....</a>
+    <a href="{{url_for('more') }}">See More.....</a>
   </body>
 </html>
+
+-->
+
+{% extends "layout.html" %}
+
+{% block heading %}
+First Page
+{% endblock%}
+
+{% block body%}
+
+<p> aaaaaaaaaaaaaaa
+    aaaaaaaaaaaaaaaaa
+    aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+    aaaaaaaaaaaaaaaaaaaaaaaaaaaa
+</p>
+<a href="{{url_for('more') }}">See More.....</a>
+
+{% endblock %}
