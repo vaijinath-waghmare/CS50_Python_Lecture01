@@ -6,7 +6,12 @@
   </head>
   <body>
     <!--<h1>Hello World!!!!!!</h1>-->
-    <h1>{{ headline }}</h1>
-
+    <!-- Jinja 2 way to provide input to html-->
+    <!--<h1>{{ headline }}</h1> -->
+    {% if new_year %}
+      <h1>Happy New Year!!!!!</h1>
+    {% else %}
+      <h1>NO</h1>
+    {% endif %}  
   </body>
 </html>

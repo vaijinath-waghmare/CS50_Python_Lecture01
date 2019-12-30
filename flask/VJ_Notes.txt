@@ -30,5 +30,11 @@ C:\Vaijinath\Study Material\Python\CS50\CS50_Python_Lecture01\flask>flask run
    Use a production WSGI server instead.
  * Debug mode: off
  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
- 
+
+*****
+
+To enable debug mode
+
+set FLASK_DEBUG=True
+
 *****
