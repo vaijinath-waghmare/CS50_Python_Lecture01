@@ -60,13 +60,15 @@ Session(app)
 #		name = request.form.get("name")
 #		return render_template("hello.html",name=name)
 
-notes = []
+#notes = []
 @app.route("/", methods = ["GET", "POST"])
 def index():
 	if session.get("notes") is None:
 		session["notes"] = []
+		#print(f"inside none:{notes}")
 	if request.method == "POST":
 		note = request.form.get("note")
 		session["notes"].append(note)
+		#print(f"inside post:{notes}")
 
-	return render_template("index.html", notes=notes)
+	return render_template("index.html", notes=session["notes"])

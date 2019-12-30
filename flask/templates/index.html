@@ -16,6 +16,7 @@ First Page
 <form action="{{ url_for('index')  }}" method="post">
   <input type="text" name="note" placeholder="Enter your Notes here">
   <button>Add Note</button>
+  <h1>{{note}}</h1>
 </form>
 
 {% endblock %}
