@@ -10,5 +10,5 @@ def main():
     flights = db.execute("select origin,destination,duration from flights").fetchall()
     for flight in flights:
         print(f"{flight.origin} to {flight.destination},{flight.duration} minute")
-if __name__ = "__main__":
+if __name__ == "__main__":
     main()
