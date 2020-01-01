@@ -18,11 +18,11 @@ def main():
         print("Error : No such flight.")
         return
     else:
-        print(f"Printing passengers in flight no {flight_id} :")
         passengers = db.execute("select flight_id,name from passengers where flight_id = :fid",{"fid":flight_id}).fetchall()
         if len(passengers) == 0:
             print("No passengers in flight")
         else:
+            print(f"Printing passengers in flight no {flight_id} :")
             for passenger in passengers:
                 print(passenger.name)
 if __name__ == "__main__":
