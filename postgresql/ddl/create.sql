@@ -4,3 +4,8 @@ CREATE TABLE flights (
   destination VARCHAR NOT NULL,
   duration INTEGER NOT NULL
 );
+
+CREATE TABLE passengers(
+  flight_id INTEGER NOT NULL,
+  name VARCHAR NOT NULL  
+);

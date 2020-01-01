@@ -56,9 +56,10 @@ Post            : 5432
 
 Help on connection : https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ConnectToPostgreSQLInstance.html#USER_ConnectToPostgreSQLInstance.Troubleshooting
 
-example
-set DATABASE_URL=""postgres://user:password@server_ip:5432/table_name""
+*****
 
-set DATABASE_URL="postgres://postgres:@database-1.cqtrommiv6nk.ap-south-1.rds.amazonaws.com:5432/flights"
+below packages were installed to make db connection between python and postgres to work
+pip install psycopg2
+pip install sqlalchemy
 
 
